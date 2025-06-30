@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumeDisplayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generated Resume"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvResumeContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your generated resume will appear here."
+            android:textSize="16sp"
+            android:paddingBottom="20dp"
+            android:justificationMode="inter_word" />
+
+        <TextView
+        android:id="@+id/tvAtsScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ATS Pass Percentage: Calculating..."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnRegenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regenerate Resume"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btnSavePdf" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save as PDF"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:backgroundTint="#03DAC5" android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Home"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</ScrollView>
